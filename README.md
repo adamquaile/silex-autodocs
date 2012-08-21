@@ -12,7 +12,7 @@ This can be installed via packagist by `require`ing `adamquaile/silex-autodocs` 
 {
     "name": "Your App",
     "require": {
-        "adamquaile/silex-autodocs": "*",
+        "adamquaile/silex-autodocs": "*"
     }
 }
 ```
