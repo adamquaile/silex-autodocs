@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style type='text/css'>
+            body {
+                font-family: Arial, serif;
+                font-size: 10pt;
+            }
+            h1 {
+                margin: 20px 0 0px 50px;
+            }
+            dl {
+                padding: 50px;
+                margin: 10px 50px 50px 50px;
+                background: #eee;
+                border: 1px solid #ddd;
+            }
+            dt {
+                margin: 0;
+                padding: 5px 0 0 0;
+                border-top: 1px solid #ccc;
+                clear: both;
+            }
+
+            p {
+                margin-left: 50px;
+            }
+
+            .phpdoc.summary, .method {
+                margin-left: 10px;
+            }
+            .pattern, .method {
+                font-family: "Courier New", monospace;
+            }
+            .method {
+                display: block;
+                width: 12em;
+                float: left;
+            }
+            .phpdoc.summary {
+                display: block;
+                float: left;
+                width: 40%;
+                margin-bottom: 6px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>Routes</h1>
+        <p>This page shows all the routes available when loaded with the bootstrap file <samp>{{bootstrap}}</samp></p>
+        <dl>
+
+            {% for route in routes %}
+                <dt>
+                    <span class='method'>{{route.getRequirement('_method')}}</span>
+                    <span class='phpdoc summary'>{{docs[route.getPattern]}}&nbsp;</span>
+                    <span class='pattern'>{{route.getPattern}}</span>
+                </dt>
+
+            {% endfor %}
+        </dl>
+
+    </body>
+</html>

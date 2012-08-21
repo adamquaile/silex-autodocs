@@ -1,0 +1,19 @@
+{
+    "name": "adamquaile/silex-autodocs",
+    "require": {
+        "php": ">=5.3.0",
+        "adamquaile/silex-lazyload-controller": "1.*"
+    },
+    "authors": [
+        {
+            "name": "Adam Quaile",
+            "email": "adam@adamquaile.com",
+            "homepage": "http://adamquaile.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "AdamQuaile": "src"
+        }
+    }
+}
