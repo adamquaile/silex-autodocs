@@ -19,7 +19,6 @@ class Routing
      */
     public static function register(\Silex\Application $staticApp)
     {
-        parent::register($staticApp);
 
         /**
          * @var \Twig_Environment $twig
@@ -33,6 +32,8 @@ class Routing
 
         $twig->setLoader(new \Twig_Loader_Chain(array($twig->getLoader(), $fsLoader)));
 
+        self::registerRoutes($staticApp);
+
     }
 
 
@@ -45,7 +46,7 @@ class Routing
      */
     public static function registerRoutes(\Silex\Application $app)
     {
-        $app->get('/autodocs/routes', array(self, 'routesAction'));
+        $app->get('/autodocs/routes', array(__CLASS__, 'routesAction'));
     }
 
     /**
@@ -82,7 +83,7 @@ class Routing
                 continue;
             }
 
-            $docs[$docKey] = $this->parseSummaryFromDocComment($method->getDocComment());
+            $docs[$docKey] = self::parseSummaryFromDocComment($method->getDocComment());
 
         }
 
