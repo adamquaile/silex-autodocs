@@ -12,17 +12,7 @@ This can be installed via packagist by `require`ing `adamquaile/silex-autodocs` 
 {
     "name": "Mercer App",
     "require": {
-        "adamquaile/csvgenerator": "master",
         "adamquaile/silex-autodocs": "*",
-        "twig/twig": ">=1.8,<2.0-dev",
-        "symfony/twig-bridge": "2.1.*",
-        "igorw/config-service-provider": "*",
-        "symfony/security": "2.1.*",
-        "silex/silex": "1.0.*",
-        "doctrine/dbal": "2.2.*",
-        "eventpad/flexibleregistrationform": "*",
-        "monolog/monolog": ">=1.0.0"
-
     }
 }
 ```
