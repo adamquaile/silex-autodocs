@@ -10,7 +10,7 @@ This can be installed via packagist by `require`ing `adamquaile/silex-autodocs` 
 
 ```
 {
-    "name": "Mercer App",
+    "name": "Your App",
     "require": {
         "adamquaile/silex-autodocs": "*",
     }
