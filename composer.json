@@ -1,8 +1,7 @@
 {
     "name": "adamquaile/silex-autodocs",
     "require": {
-        "php": ">=5.3.0",
-        "adamquaile/silex-lazyload-controller": "1.*"
+        "php": ">=5.3.0"
     },
     "authors": [
         {
