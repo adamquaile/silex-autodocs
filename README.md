@@ -26,4 +26,6 @@ $app = new \Silex\Application();
 \AdamQuaile\Silex\AutoDocs\Routing::register($app);
 ```
 
-All should be ready, now go to `/autodocs/routes`
+All should be ready, now go to `/autodocs/routes`. You should see a page like this:
+
+![Sample Screenshot of Silex Autodocs](http://static.adamquaile.com/images/autodocs-screenshot.png)
